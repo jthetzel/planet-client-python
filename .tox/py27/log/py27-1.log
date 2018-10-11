@@ -1,0 +1,32 @@
+actionid: py27
+msg: getenv
+cmdargs: '/Users/eric/pl/planet-client-python/.tox/py27/bin/python -m pip install pytest'
+
+Collecting pytest
+  Downloading https://files.pythonhosted.org/packages/08/e0/a4945a06380802264b3416d788ad607588c334662b6cd0af54144c45912d/pytest-3.8.2-py2.py3-none-any.whl (209kB)
+Requirement already satisfied: setuptools in ./.tox/py27/lib/python2.7/site-packages (from pytest) (40.4.3)
+Collecting pluggy>=0.7 (from pytest)
+  Using cached https://files.pythonhosted.org/packages/f5/f1/5a93c118663896d83f7bcbfb7f657ce1d0c0d617e6b4a443a53abcc658ca/pluggy-0.7.1-py2.py3-none-any.whl
+Collecting six>=1.10.0 (from pytest)
+  Using cached https://files.pythonhosted.org/packages/67/4b/141a581104b1f6397bfa78ac9d43d8ad29a7ca43ea90a2d863fe3056e86a/six-1.11.0-py2.py3-none-any.whl
+Collecting funcsigs; python_version < "3.0" (from pytest)
+  Using cached https://files.pythonhosted.org/packages/69/cb/f5be453359271714c01b9bd06126eaf2e368f1fddfff30818754b5ac2328/funcsigs-1.0.2-py2.py3-none-any.whl
+Collecting pathlib2>=2.2.0; python_version < "3.6" (from pytest)
+  Using cached https://files.pythonhosted.org/packages/66/a7/9f8d84f31728d78beade9b1271ccbfb290c41c1e4dc13dbd4997ad594dcd/pathlib2-2.3.2-py2.py3-none-any.whl
+Collecting py>=1.5.0 (from pytest)
+  Using cached https://files.pythonhosted.org/packages/c8/47/d179b80ab1dc1bfd46a0c87e391be47e6c7ef5831a9c138c5c49d1756288/py-1.6.0-py2.py3-none-any.whl
+Collecting more-itertools>=4.0.0 (from pytest)
+  Downloading https://files.pythonhosted.org/packages/fb/d3/77f337876600747ae307ea775ff264c5304a691941cd347382c7932c60ad/more_itertools-4.3.0-py2-none-any.whl (48kB)
+Collecting attrs>=17.4.0 (from pytest)
+  Downloading https://files.pythonhosted.org/packages/3a/e1/5f9023cc983f1a628a8c2fd051ad19e76ff7b142a0faf329336f9a62a514/attrs-18.2.0-py2.py3-none-any.whl
+Collecting atomicwrites>=1.0 (from pytest)
+  Downloading https://files.pythonhosted.org/packages/3a/9a/9d878f8d885706e2530402de6417141129a943802c084238914fa6798d97/atomicwrites-1.2.1-py2.py3-none-any.whl
+Collecting scandir; python_version < "3.5" (from pathlib2>=2.2.0; python_version < "3.6"->pytest)
+  Downloading https://files.pythonhosted.org/packages/16/2a/557af1181e6b4e30254d5a6163b18f5053791ca66e251e77ab08887e8fe3/scandir-1.9.0.tar.gz
+Building wheels for collected packages: scandir
+  Running setup.py bdist_wheel for scandir: started
+  Running setup.py bdist_wheel for scandir: finished with status 'done'
+  Stored in directory: /Users/eric/Library/Caches/pip/wheels/f8/0f/92/c4c88ade5511836769f6cfa676ffe9661393a6a648cb173b8f
+Successfully built scandir
+Installing collected packages: pluggy, six, funcsigs, scandir, pathlib2, py, more-itertools, attrs, atomicwrites, pytest
+Successfully installed atomicwrites-1.2.1 attrs-18.2.0 funcsigs-1.0.2 more-itertools-4.3.0 pathlib2-2.3.2 pluggy-0.7.1 py-1.6.0 pytest-3.8.2 scandir-1.9.0 six-1.11.0

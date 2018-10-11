@@ -1,0 +1,84 @@
+actionid: tox
+msg: packaging
+cmdargs: '/Users/eric/.pyenv/versions/2.7.15/bin/python2.7 /Users/eric/pl/planet-client-python/setup.py sdist --formats=zip --dist-dir /Users/eric/pl/planet-client-python/.tox/dist'
+
+running sdist
+running egg_info
+writing requirements to planet.egg-info/requires.txt
+writing planet.egg-info/PKG-INFO
+writing top-level names to planet.egg-info/top_level.txt
+writing dependency_links to planet.egg-info/dependency_links.txt
+writing entry points to planet.egg-info/entry_points.txt
+reading manifest file 'planet.egg-info/SOURCES.txt'
+writing manifest file 'planet.egg-info/SOURCES.txt'
+running check
+creating planet-1.1.0
+creating planet-1.1.0/planet
+creating planet-1.1.0/planet.egg-info
+creating planet-1.1.0/planet/api
+creating planet-1.1.0/planet/scripts
+copying files to planet-1.1.0...
+copying README.rst -> planet-1.1.0
+copying setup.cfg -> planet-1.1.0
+copying setup.py -> planet-1.1.0
+copying planet/__init__.py -> planet-1.1.0/planet
+copying planet.egg-info/PKG-INFO -> planet-1.1.0/planet.egg-info
+copying planet.egg-info/SOURCES.txt -> planet-1.1.0/planet.egg-info
+copying planet.egg-info/dependency_links.txt -> planet-1.1.0/planet.egg-info
+copying planet.egg-info/entry_points.txt -> planet-1.1.0/planet.egg-info
+copying planet.egg-info/not-zip-safe -> planet-1.1.0/planet.egg-info
+copying planet.egg-info/requires.txt -> planet-1.1.0/planet.egg-info
+copying planet.egg-info/top_level.txt -> planet-1.1.0/planet.egg-info
+copying planet/api/__init__.py -> planet-1.1.0/planet/api
+copying planet/api/__version__.py -> planet-1.1.0/planet/api
+copying planet/api/_fatomic.py -> planet-1.1.0/planet/api
+copying planet/api/auth.py -> planet-1.1.0/planet/api
+copying planet/api/client.py -> planet-1.1.0/planet/api
+copying planet/api/dispatch.py -> planet-1.1.0/planet/api
+copying planet/api/downloader.py -> planet-1.1.0/planet/api
+copying planet/api/exceptions.py -> planet-1.1.0/planet/api
+copying planet/api/filters.py -> planet-1.1.0/planet/api
+copying planet/api/models.py -> planet-1.1.0/planet/api
+copying planet/api/utils.py -> planet-1.1.0/planet/api
+copying planet/scripts/__init__.py -> planet-1.1.0/planet/scripts
+copying planet/scripts/__main__.py -> planet-1.1.0/planet/scripts
+copying planet/scripts/cli.py -> planet-1.1.0/planet/scripts
+copying planet/scripts/item_asset_types.py -> planet-1.1.0/planet/scripts
+copying planet/scripts/opts.py -> planet-1.1.0/planet/scripts
+copying planet/scripts/types.py -> planet-1.1.0/planet/scripts
+copying planet/scripts/util.py -> planet-1.1.0/planet/scripts
+copying planet/scripts/v1.py -> planet-1.1.0/planet/scripts
+Writing planet-1.1.0/setup.cfg
+creating '.tox/dist/planet-1.1.0.zip' and adding 'planet-1.1.0' to it
+adding 'planet-1.1.0/PKG-INFO'
+adding 'planet-1.1.0/setup.py'
+adding 'planet-1.1.0/setup.cfg'
+adding 'planet-1.1.0/README.rst'
+adding 'planet-1.1.0/planet/__init__.py'
+adding 'planet-1.1.0/planet/scripts/v1.py'
+adding 'planet-1.1.0/planet/scripts/util.py'
+adding 'planet-1.1.0/planet/scripts/__init__.py'
+adding 'planet-1.1.0/planet/scripts/types.py'
+adding 'planet-1.1.0/planet/scripts/item_asset_types.py'
+adding 'planet-1.1.0/planet/scripts/cli.py'
+adding 'planet-1.1.0/planet/scripts/opts.py'
+adding 'planet-1.1.0/planet/scripts/__main__.py'
+adding 'planet-1.1.0/planet/api/auth.py'
+adding 'planet-1.1.0/planet/api/_fatomic.py'
+adding 'planet-1.1.0/planet/api/models.py'
+adding 'planet-1.1.0/planet/api/downloader.py'
+adding 'planet-1.1.0/planet/api/dispatch.py'
+adding 'planet-1.1.0/planet/api/client.py'
+adding 'planet-1.1.0/planet/api/__init__.py'
+adding 'planet-1.1.0/planet/api/__version__.py'
+adding 'planet-1.1.0/planet/api/utils.py'
+adding 'planet-1.1.0/planet/api/exceptions.py'
+adding 'planet-1.1.0/planet/api/filters.py'
+adding 'planet-1.1.0/planet.egg-info/PKG-INFO'
+adding 'planet-1.1.0/planet.egg-info/not-zip-safe'
+adding 'planet-1.1.0/planet.egg-info/SOURCES.txt'
+adding 'planet-1.1.0/planet.egg-info/entry_points.txt'
+adding 'planet-1.1.0/planet.egg-info/requires.txt'
+adding 'planet-1.1.0/planet.egg-info/top_level.txt'
+adding 'planet-1.1.0/planet.egg-info/dependency_links.txt'
+removing 'planet-1.1.0' (and everything under it)

@@ -1,0 +1,8 @@
+actionid: py27
+msg: getenv
+cmdargs: '/Users/eric/.pyenv/versions/2.7.15/bin/python2.7 -m virtualenv --python /Users/eric/.pyenv/versions/2.7.15/bin/python2.7 py27'
+
+Already using interpreter /Users/eric/.pyenv/versions/2.7.15/bin/python2.7
+New python executable in /Users/eric/pl/planet-client-python/.tox/py27/bin/python2.7
+Also creating executable in /Users/eric/pl/planet-client-python/.tox/py27/bin/python
+Installing setuptools, pip, wheel...done.

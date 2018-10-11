@@ -1,0 +1,109 @@
+actionid: py27
+msg: installpkg
+cmdargs: '/Users/eric/pl/planet-client-python/.tox/py27/bin/python -m pip install --exists-action w /Users/eric/pl/planet-client-python/.tox/.tmp/package/1/planet-1.1.0.zip'
+
+Processing ./.tox/.tmp/package/1/planet-1.1.0.zip
+Collecting click (from planet==1.1.0)
+  Downloading https://files.pythonhosted.org/packages/fa/37/45185cb5abbc30d7257104c434fe0b07e5a195a6847506c074527aa599ec/Click-7.0-py2.py3-none-any.whl (81kB)
+Collecting requests (from planet==1.1.0)
+  Using cached https://files.pythonhosted.org/packages/65/47/7e02164a2a3db50ed6d8a6ab1d6d60b69c4c3fdf57a284257925dfc12bda/requests-2.19.1-py2.py3-none-any.whl
+Collecting requests_futures (from planet==1.1.0)
+  Downloading https://files.pythonhosted.org/packages/2c/f0/d9a6d4472286405956dd5ac6279fe932a86151df9816bc35afe601495819/requests-futures-0.9.7.tar.gz
+Collecting urllib3<1.24,>=1.21.1 (from requests->planet==1.1.0)
+  Using cached https://files.pythonhosted.org/packages/bd/c9/6fdd990019071a4a32a5e7cb78a1d92c53851ef4f56f62a3486e6a7d8ffb/urllib3-1.23-py2.py3-none-any.whl
+Collecting idna<2.8,>=2.5 (from requests->planet==1.1.0)
+  Using cached https://files.pythonhosted.org/packages/4b/2a/0276479a4b3caeb8a8c1af2f8e4355746a97fab05a372e4a2c6a6b876165/idna-2.7-py2.py3-none-any.whl
+Collecting certifi>=2017.4.17 (from requests->planet==1.1.0)
+  Downloading https://files.pythonhosted.org/packages/df/f7/04fee6ac349e915b82171f8e23cee63644d83663b34c539f7a09aed18f9e/certifi-2018.8.24-py2.py3-none-any.whl (147kB)
+Collecting chardet<3.1.0,>=3.0.2 (from requests->planet==1.1.0)
+  Using cached https://files.pythonhosted.org/packages/bc/a9/01ffebfb562e4274b6487b4bb1ddec7ca55ec7510b22e4c51f14098443b8/chardet-3.0.4-py2.py3-none-any.whl
+Collecting futures>=2.1.3 (from requests_futures->planet==1.1.0)
+  Using cached https://files.pythonhosted.org/packages/2d/99/b2c4e9d5a30f6471e410a146232b4118e697fa3ffc06d6a65efde84debd0/futures-3.2.0-py2-none-any.whl
+Building wheels for collected packages: planet, requests-futures
+  Running setup.py bdist_wheel for planet: started
+  Running setup.py bdist_wheel for planet: finished with status 'error'
+  Complete output from command /Users/eric/pl/planet-client-python/.tox/py27/bin/python -u -c "import setuptools, tokenize;__file__='/private/var/folders/q9/zqdm6xf16g537l69fy68y9zm0000gn/T/pip-req-build-5M4lmR/setup.py';f=getattr(tokenize, 'open', open)(__file__);code=f.read().replace('\r\n', '\n');f.close();exec(compile(code, __file__, 'exec'))" bdist_wheel -d /private/var/folders/q9/zqdm6xf16g537l69fy68y9zm0000gn/T/pip-wheel-3js_N9 --python-tag cp27:
+  running bdist_wheel
+  running build
+  running build_py
+  creating build
+  creating build/lib
+  creating build/lib/planet
+  copying planet/__init__.py -> build/lib/planet
+  creating build/lib/planet/scripts
+  copying planet/scripts/v1.py -> build/lib/planet/scripts
+  copying planet/scripts/util.py -> build/lib/planet/scripts
+  copying planet/scripts/__init__.py -> build/lib/planet/scripts
+  copying planet/scripts/types.py -> build/lib/planet/scripts
+  copying planet/scripts/item_asset_types.py -> build/lib/planet/scripts
+  copying planet/scripts/cli.py -> build/lib/planet/scripts
+  copying planet/scripts/opts.py -> build/lib/planet/scripts
+  copying planet/scripts/__main__.py -> build/lib/planet/scripts
+  creating build/lib/planet/api
+  copying planet/api/auth.py -> build/lib/planet/api
+  copying planet/api/_fatomic.py -> build/lib/planet/api
+  copying planet/api/models.py -> build/lib/planet/api
+  copying planet/api/downloader.py -> build/lib/planet/api
+  copying planet/api/dispatch.py -> build/lib/planet/api
+  copying planet/api/client.py -> build/lib/planet/api
+  copying planet/api/__init__.py -> build/lib/planet/api
+  copying planet/api/__version__.py -> build/lib/planet/api
+  copying planet/api/utils.py -> build/lib/planet/api
+  copying planet/api/exceptions.py -> build/lib/planet/api
+  copying planet/api/filters.py -> build/lib/planet/api
+  running egg_info
+  writing requirements to planet.egg-info/requires.txt
+  writing planet.egg-info/PKG-INFO
+  writing entry points to planet.egg-info/entry_points.txt
+  writing top-level names to planet.egg-info/top_level.txt
+  writing dependency_links to planet.egg-info/dependency_links.txt
+  reading manifest file 'planet.egg-info/SOURCES.txt'
+  writing manifest file 'planet.egg-info/SOURCES.txt'
+  installing to build/bdist.macosx-10.13-x86_64/wheel
+  running install
+  running install_lib
+  creating build/bdist.macosx-10.13-x86_64
+  creating build/bdist.macosx-10.13-x86_64/wheel
+  creating build/bdist.macosx-10.13-x86_64/wheel/planet
+  copying build/lib/planet/__init__.py -> build/bdist.macosx-10.13-x86_64/wheel/planet
+  creating build/bdist.macosx-10.13-x86_64/wheel/planet/scripts
+  copying build/lib/planet/scripts/v1.py -> build/bdist.macosx-10.13-x86_64/wheel/planet/scripts
+  copying build/lib/planet/scripts/util.py -> build/bdist.macosx-10.13-x86_64/wheel/planet/scripts
+  copying build/lib/planet/scripts/__init__.py -> build/bdist.macosx-10.13-x86_64/wheel/planet/scripts
+  copying build/lib/planet/scripts/types.py -> build/bdist.macosx-10.13-x86_64/wheel/planet/scripts
+  copying build/lib/planet/scripts/item_asset_types.py -> build/bdist.macosx-10.13-x86_64/wheel/planet/scripts
+  copying build/lib/planet/scripts/cli.py -> build/bdist.macosx-10.13-x86_64/wheel/planet/scripts
+  copying build/lib/planet/scripts/opts.py -> build/bdist.macosx-10.13-x86_64/wheel/planet/scripts
+  copying build/lib/planet/scripts/__main__.py -> build/bdist.macosx-10.13-x86_64/wheel/planet/scripts
+  creating build/bdist.macosx-10.13-x86_64/wheel/planet/api
+  copying build/lib/planet/api/auth.py -> build/bdist.macosx-10.13-x86_64/wheel/planet/api
+  copying build/lib/planet/api/_fatomic.py -> build/bdist.macosx-10.13-x86_64/wheel/planet/api
+  copying build/lib/planet/api/models.py -> build/bdist.macosx-10.13-x86_64/wheel/planet/api
+  copying build/lib/planet/api/downloader.py -> build/bdist.macosx-10.13-x86_64/wheel/planet/api
+  copying build/lib/planet/api/dispatch.py -> build/bdist.macosx-10.13-x86_64/wheel/planet/api
+  copying build/lib/planet/api/client.py -> build/bdist.macosx-10.13-x86_64/wheel/planet/api
+  copying build/lib/planet/api/__init__.py -> build/bdist.macosx-10.13-x86_64/wheel/planet/api
+  copying build/lib/planet/api/__version__.py -> build/bdist.macosx-10.13-x86_64/wheel/planet/api
+  copying build/lib/planet/api/utils.py -> build/bdist.macosx-10.13-x86_64/wheel/planet/api
+  copying build/lib/planet/api/exceptions.py -> build/bdist.macosx-10.13-x86_64/wheel/planet/api
+  copying build/lib/planet/api/filters.py -> build/bdist.macosx-10.13-x86_64/wheel/planet/api
+  running install_egg_info
+  Copying planet.egg-info to build/bdist.macosx-10.13-x86_64/wheel/planet-1.1.0-py2.7.egg-info
+  running install_scripts
+  error: [Errno 2] No such file or directory: 'LICENSE'
+  
+  ----------------------------------------
+  Failed building wheel for planet
+  Running setup.py clean for planet
+  Running setup.py bdist_wheel for requests-futures: started
+  Running setup.py bdist_wheel for requests-futures: finished with status 'done'
+  Stored in directory: /Users/eric/Library/Caches/pip/wheels/71/fb/7a/0caacf78e523a182dadd1d042792801cfd53f27c77b945b64a
+Successfully built requests-futures
+Failed to build planet
+Installing collected packages: click, urllib3, idna, certifi, chardet, requests, futures, requests-futures, planet
+  Found existing installation: planet 1.1.0
+    Not uninstalling planet at /Users/eric/pl/planet-client-python, outside environment /Users/eric/pl/planet-client-python/.tox/py27
+    Can't uninstall 'planet'. No files were found to uninstall.
+  Running setup.py install for planet: started
+    Running setup.py install for planet: finished with status 'done'
+Successfully installed certifi-2018.8.24 chardet-3.0.4 click-7.0 futures-3.2.0 idna-2.7 planet-1.1.0 requests-2.19.1 requests-futures-0.9.7 urllib3-1.23

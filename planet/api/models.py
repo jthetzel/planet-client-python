@@ -20,6 +20,8 @@ from .utils import GeneratorAdapter
 from datetime import datetime
 import itertools
 import json
+from sys import version_info
+from warnings import warn, simplefilter
 
 chunk_size = 32 * 1024
 
@@ -32,6 +34,10 @@ class Response(object):
         self._body = None
         self._future = None
         self._cancel = False
+
+        # Backward compatibility for removed await() method in Python 3.7
+        if version_info < (3, 7):
+            setattr(self, 'await', self._await_deprecated)
 
     def _create_body(self, response):
         return self.request.body_type(self.request, response, self._dispatcher)
@@ -71,6 +77,15 @@ class Response(object):
         if self._future:
             self._future.result()
         return self._body
+
+    def _await_deprecated(self):
+        simplefilter('always', DeprecationWarning)
+        warn('Response.await method is deprecated and will be removed in '
+             'Python 3.7. Use Response.wait_for method instead.',
+             DeprecationWarning,
+             stacklevel=2)
+        simplefilter('default', DeprecationWarning)
+        self.wait_for()
 
     def cancel(self):
         '''Cancel any request.'''

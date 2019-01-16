@@ -14,6 +14,8 @@
 
 import io
 import json
+from sys import version_info
+from pytest import deprecated_call
 from planet.api.models import Features
 from planet.api.models import Paged
 from planet.api.models import Request
@@ -123,3 +125,19 @@ def test_features():
     features_json = json.loads(buf.getvalue())
     assert features_json['type'] == 'FeatureCollection'
     assert len(features_json['features']) == 13
+
+
+def test_response():
+    req = Request('url', 'auth')
+    dispatcher = MagicMock(name='dispatcher', )
+    response = Response(req, dispatcher)
+    body = response.wait_for()
+    assert(body is None)
+    # Response.await is removed in Python 3.7
+    # and should raise DeprecationWarning in earlier versions.
+    if version_info < (3, 7):
+        # Response.await raises InvocationError in Tox with Python >= 3.7,
+        # so use getattr() instead.
+        func = getattr(response, 'await')
+        deprecated_call(func)
+

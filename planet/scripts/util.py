@@ -47,12 +47,12 @@ _insecure_warning = []
 showwarning = warnings.showwarning
 
 
-def hack(message, category, filename, lineno):
+def hack(message, category, filename, lineno, *args):
     if category is urllib3exc.InsecurePlatformWarning:
         if len(_insecure_warning) == 0:
             _insecure_warning.append(message)
         return
-    showwarning(message, category, filename, lineno)
+    showwarning(message, category, filename, lineno, *args)
 
 
 warnings.showwarning = hack

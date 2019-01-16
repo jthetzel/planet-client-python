@@ -400,7 +400,7 @@ class _Downloader(Downloader):
                 else:
                     item, asset, self._awaiting = n
                     try:
-                        body = self._awaiting.await()
+                        body = self._awaiting.wait_for()
                         self._awaiting = None
                         dl = os.path.join(self._dest, body.name)
                         self.on_complete(item, asset, dl)
